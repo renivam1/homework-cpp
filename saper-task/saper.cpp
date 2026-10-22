@@ -34,6 +34,10 @@ int main() {
                 out << '\n';
             }
             std::cout << std::endl << "Successful!\n";
+            for(int i = 0; i < n; i++) {
+                delete[] field[i];
+            }
+            delete[] field;
         } else if(command == 5) {
             exit(0);
         } else if(command == 2) {
@@ -83,6 +87,10 @@ int main() {
                 out << std::endl;
             }
             std::cout << std::endl << "Successful!\n";
+            for(int i = 0; i < n; i++) {
+                delete[] field[i];
+            }
+            delete[] field;
         } else if(command == 4) {
             std::ifstream in("result.txt");
             std::string line;
