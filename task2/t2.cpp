@@ -25,6 +25,7 @@ void reverse(int* arr, int begin, int end) {
 }
 
 int main(int argc, char* argv[]) {
+    if(argc != 2) return 1;
     char* tmp = argv[1];
     int len = 0;
     for(int i = 0; tmp[i] != '\0'; i++) {len++;}
