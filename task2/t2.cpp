@@ -46,7 +46,10 @@ int main(int argc, char* argv[]) {
         reverse(arr, 0, n);
     }
     for(int i = 0; i < n; i++) {std::cout << arr[i] << '\n';}
-    for(int i = 0; i < n; i++) {std::cout << arr[i] << ' ';}
+    for(int i = 0; i < n; i++) {
+        std::cout << arr[i];
+        if(i != n - 1) std::cout << ' ';
+    }
     std::cout << std::endl;
     delete[] arr;
     return 0;
