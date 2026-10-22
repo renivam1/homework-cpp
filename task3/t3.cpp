@@ -10,6 +10,7 @@ int stoi(char* n, int len) {
 }
 
 int main(int argc, char* argv[]) {
+    if(argc != 2) return 1;
     std::cout.precision(6);
     char* tmp = argv[1];
     int len = 0;
