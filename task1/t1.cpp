@@ -40,8 +40,8 @@ void separate(char* n, int& cntI, int& cntF, int& isPositive, char (&arrI)[MAX],
 }
 
 int main(int argc, char* argv[]) {
-    char* &x = argv[1];
-    char* &y = argv[2];
+    char* x = argv[1];
+    char* y = argv[2];
     int res = -1;
     int ix = 0, fx = 0, isXPositive = 0;
     separate(x, ix, fx, isXPositive, integerX, fractX);
