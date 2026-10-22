@@ -25,7 +25,7 @@ void reverse(int* arr, int begin, int end) {
 }
 
 int main(int argc, char* argv[]) {
-    char* &tmp = argv[1];
+    char* tmp = argv[1];
     int len = 0;
     for(int i = 0; tmp[i] != '\0'; i++) {len++;}
     int n = stoi(tmp, len);
