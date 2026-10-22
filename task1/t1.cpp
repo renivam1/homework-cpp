@@ -40,6 +40,7 @@ void separate(char* n, int& cntI, int& cntF, int& isPositive, char (&arrI)[MAX],
 }
 
 int main(int argc, char* argv[]) {
+    if(argc != 3) return 1;
     char* x = argv[1];
     char* y = argv[2];
     int res = -1;
